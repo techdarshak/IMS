@@ -1,0 +1,73 @@
+.dashboard{
+    padding: 2rem;
+}
+
+.project-container{
+    max-width: 1140px;
+    width: 55%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #f2f2f2;
+    margin:0;
+}
+
+.project-card{
+    background: white;
+    margin: 1rem;
+    display: flex;
+    height: 15vh;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.project-card img{
+    width: 50px;
+}
+
+.project-title{
+    color: black;
+    font-size: medium;
+}
+
+.pro-details{
+    font-size: 1.5rem;
+    display: flex;
+    font-weight: bold;
+    padding: 0.2rem 0px;
+}
+
+.content{
+    line-height: 10px;
+}
+
+
+
+@media screen and (max-width : 1072px){
+    .project-container{
+        max-width: 100%;
+        width: 100%;
+        grid-template-columns: 1fr;
+        background-color: #f2f2f2;
+        margin:0;
+        display:block;
+        justify-content: start;
+        align-items: center;
+        padding: 0.5rem 0rem;
+    }
+
+    .project-card img{
+        width: 70px;
+    }
+
+    .project-title{
+        color: black;
+        font-size: 1.6rem;
+    }
+    
+    .pro-details{
+        font-size: 2rem;
+        display: flex;
+        font-weight: bold;
+        padding: 0.2rem 0px;
+    }
+}

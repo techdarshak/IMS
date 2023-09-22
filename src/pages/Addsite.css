@@ -1,0 +1,28 @@
+
+.btn{
+    margin-left: 400px;
+}
+.site{
+margin-top: 20px;
+text-align: start;
+margin-left: 20px;
+}
+ .he{
+    border: 5;
+    margin-top: 20px;
+} 
+.in{
+    margin-left: 10;
+    width: 220px;
+    height: 50px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-top-color: aqua;   
+}
+.sa{
+    background: #696CFF;
+    width: 100px;
+    border-style: none;
+    height: 30px;
+    border-radius: 5px;
+}
