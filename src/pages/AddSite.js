@@ -32,38 +32,37 @@ const AddSite = () => {
       };
     
       const list = (anchor) => (
-        <Box
-          sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
+        <Box 
+          sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 430 }}
           role="presentation"
           onClick={ toggleDrawer(anchor, true)}
           onKeyDown={toggleDrawer(anchor, true)}
         >
           <div className='site'>
-              <h4>Add New Site</h4>
+              <p className='large'>Add New Site</p>
           <div>
-            <form >
-              <h6 className='he'>Site Name</h6>
-              <input className='in'
+            <form className='addsite'>
+              <h6 className='small'>Site Name</h6>
+              <input className='textbox'
                 type="text"
                 placeholder='Enter Site Name'
-                 
               />
-              <h6 className='he '>Address</h6>
-              <input className='in'
+              <h6 className='small'>Address</h6>
+              <input className='textbox'
                 type="text"
                 placeholder='Enter Address'
               />
-              <h6 className='he'>Start Date</h6>
-              <input className='in'
-                type="text"
+              <h6 className='small'>Start Date</h6>
+              <input className='textbox'
+                type="date"
                 placeholder='Select Start Date '
               />
-              <h6 className='he'>End Date</h6>
-              <input className='in'
-                type="text"
+              <h6 className='small'>End Date</h6>
+              <input className='textbox'
+                type="date"
                 placeholder='Select End Date'
               />
-              <button className='he sa' type="submit">Save</button>
+              <button className='btn' type="submit">Save</button>
             </form>
                   
             </div>
@@ -97,7 +96,7 @@ const AddSite = () => {
       );
     
       return (
-        <div >
+        <div>
           {[ 'right'].map((anchor) => (
             <React.Fragment key={anchor}>
               <Button className='btn' onClick={toggleDrawer(anchor, true)}>{anchor}</Button>

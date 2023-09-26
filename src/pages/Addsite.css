@@ -1,28 +1,49 @@
 
 .btn{
-    margin-left: 400px;
+    width: 40%;
+    background-color: #696CFF;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-left: 0;
 }
+
 .site{
 margin-top: 20px;
 text-align: start;
 margin-left: 20px;
 }
- .he{
-    border: 5;
-    margin-top: 20px;
-} 
-.in{
-    margin-left: 10;
-    width: 220px;
+
+
+.textbox{
+    border: solid #697A8D;
+    border-width: 1rem;
+    width: 95%;
     height: 50px;
     border-radius: 5px;
     border-width: 1px;
-    border-top-color: aqua;   
+    color: black;
+    padding: 1rem;
+    text-decoration: none;
 }
-.sa{
-    background: #696CFF;
-    width: 100px;
-    border-style: none;
-    height: 30px;
-    border-radius: 5px;
+
+.addsite{
+    padding-top: 0.5rem;
 }
+
+.large{
+    font-size: 2rem;
+    color: #697A8D;
+    padding-top: 1rem;
+}
+
+.small{
+    font-size: 1.1rem;
+    color: #697A8D;
+    font-weight: 500;
+    padding-top: 1rem;
+} 
