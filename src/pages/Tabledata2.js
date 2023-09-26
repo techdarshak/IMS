@@ -1,3 +1,4 @@
+
 import React,{useState,useEffect} from 'react'
 import '../../src/Table.css'
 import { Link ,useNavigate } from 'react-router-dom'
@@ -5,7 +6,7 @@ import axios from 'axios'
 
 const url = "https://jsonplaceholder.typicode.com/posts"
 
-const Tabledata = () => {
+const Tabledata2 = () => {
     const [users,setUsers] = useState([]);
   const fetchData = async () =>{
     try{
@@ -24,13 +25,13 @@ const Tabledata = () => {
 <h1 className='heading'></h1>
 <div class="relative overflow-x-auto shadow-md sm:rounded-lg ml-44 top1">
 <div className='bg-white mb-12' >
-<h1 className='text-6xl bg-white-600 p-6'>Sites</h1>
+<h1 className='text-6xl bg-white-600 p-6'>User Management</h1>
 </div>
 <div className='bg-white '>
 <div className=''>
 <Link to='/AddSite' className='text-white bg-blue-700  font-medium  text-sm px-6 py-4 text-center b1'>Add Site</Link>
 </div>
-<h1 className='mb-8 ml-4 text-2xl'>Sites</h1>
+<h1 className='mb-8 ml-4 text-2xl'>User Management</h1>
 <div>
 <table class="table">
   <thead>
@@ -74,4 +75,4 @@ const Tabledata = () => {
   )
 }
 
-export default Tabledata
+export default Tabledata2
