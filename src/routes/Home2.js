@@ -23,9 +23,23 @@ const Home2 = () => {
   },[])
   return (
     <div>
-        {users.map((item)=>{
-          return <h1>{item.title}</h1>
-        })}
+       <table class="table mx-auto w-50 h-50" >
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+    </tr>
+  </thead>
+
+  {users.map((item)=>{
+    return <tr key={item.id}>
+    <td>{item.id}</td>
+                <td>{item.title}</td>
+                <td>{item.body}</td>
+              </tr>
+  })}
+</table>
     </div>
   )
 }

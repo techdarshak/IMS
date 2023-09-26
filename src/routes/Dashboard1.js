@@ -46,7 +46,7 @@ const Dashboard1 = () => {
             </div>
             <div className='con'>
                 <RiProductHuntLine/>
-                <a style={{paddingLeft:"0.5rem"}}>Products</a>
+                <Link to='/table1' style={{paddingLeft:"0.5rem"}}>Products</Link>
             </div>
         </div>
             
@@ -62,7 +62,7 @@ const Dashboard1 = () => {
             <h3 className='light'>Users</h3>
             <div className='con'>
                 <GrUserManager/>
-                <a style={{paddingLeft:"0.5rem"}}>User management</a>
+                <Link to='/table2' style={{paddingLeft:"0.5rem"}}>User Management</Link>
             </div>
          </div>
 

@@ -5,6 +5,8 @@ import Login from "./routes/Login";
 import "./index.css";
 import Dashboard1 from './routes/Dashboard1';
 import Tabledata from './pages/Tabledata';
+import Tabledata2 from './pages/Tabledata2';
+import Tabledata1 from './pages/TableData1';
 import SharedLayout from './pages/SharedLayout';
 import Form from './pages/Form';
 import AddSite from './pages/AddSite';
@@ -21,6 +23,8 @@ function App () {
     <Route index element={<Home />} />
         <Route path='/Dashboard1' element={<Dashboard1/>}/>
         <Route path='/table' element={<Tabledata />} />
+        <Route path='/table1' element={<Tabledata1 />} />
+        <Route path='/table2' element={<Tabledata2 />} />
         <Route path='/form' element={<Form />} />
         <Route path='/AddSite' element={<AddSite/>} />
       </Route>
